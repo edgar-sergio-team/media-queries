@@ -33,13 +33,13 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-size: 46px;
+    font-size: 45px;
     font-weight: bold;
     margin: 5px 0 20px 0;
 }
 
 ul .nav-links {
-    width: calc(100% - 68px);
+    width: calc(100% - 70px);
 }
 
 .nav-links>li {
@@ -57,7 +57,7 @@ h2 {
 }
 
 .main>h2 {
-    margin: 19px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .main>p {
@@ -97,7 +97,7 @@ footer {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 4fr 4fr 1fr;
         height: 100vh;
-        width: calc(100%-400px);
+        width: calc(100% - 100px);
 
         grid-template-areas: "company nav-links"
                              "image image"
@@ -134,7 +134,40 @@ footer {
         padding: 20px 0 20px 20px;
     }
 
+    .header-img {
+        grid-area: image;
+        height: auto;
+        width: 100%;
+    }
 
+    .header-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    #main {
+        grid-area: main-section;
+    }
+
+    .main p {
+        margin-right: 15px;
+    }
+
+    .sub-section {
+        grid-area: sub-section;
+    }
+
+    #main h2 {
+        margin: 45px 0;
+    }
+
+    .sub-section h2 {
+        margin: 45px 0;
+    }
+
+    footer {
+        grid-area: bottom-footer;
+    }
 
 }
 
