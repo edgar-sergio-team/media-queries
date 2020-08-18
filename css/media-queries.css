@@ -29,3 +29,37 @@ body {
     height: 225px;
     width: 340px;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
+    font-weight: bold;
+    margin: 5px 0 20px 0;
+}
+
+ul .nav-links {
+    width: calc(100% - 68px);
+}
+
+.nav-links>li {
+    background: lightgray;
+    margin: 12px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.main>h2 {
+    margin: 19px 0 0 0;
+}
+
+.main>p {
+    margin: 8px 0 30px 0;
+}
